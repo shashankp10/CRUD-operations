@@ -87,10 +87,10 @@ public class WebSecurityConfig {
 4. Basic auth using DB
 
 
-================== JSON WEB TOKEN (JWT) AUTHENTICATION ================================
+================== JSON WEB TOKEN (JWT) AUTHENTICATION ==================
 
 
-============================ OAuth 2 =============================================
+================== OAuth 2 ================================
  # This is a protocol that allows users to grant access to their resources to third-party applications without giving them their passwords
 
 
