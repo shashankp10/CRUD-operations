@@ -17,6 +17,7 @@
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig {
+
 	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 	     http
@@ -46,7 +47,9 @@ public class WebSecurityConfig {
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig {
-		// Authentication
+	
+	// Authentication
+		
 	@Bean
     public UserDetailsService userDetailsService() {
         UserDetails admin = User
