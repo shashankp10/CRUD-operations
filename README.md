@@ -1,7 +1,7 @@
 # CRUD-operations
 
 
-===================================== BASIC AUTHORIZATION IMPLEMENTATION =========================================
+================= BASIC AUTHORIZATION IMPLEMENTATION ======================
 
 
 1. directly set username and password in application.property file (just for testing purpose)
@@ -9,7 +9,7 @@
 	spring.security.user.name=user
 	spring.security.user.password=1234
 
------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 
 2. Basic auth for any request (inMemoryAuthenication)
 
@@ -42,7 +42,7 @@ public class WebSecurityConfig {
 	 }
 }
 
------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------
 
 3. Role based basic auth (inMemoryAuthenication)
 
@@ -85,7 +85,7 @@ public class WebSecurityConfig {
 
 }
 
------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
 
 4. Basic auth using DB
 
