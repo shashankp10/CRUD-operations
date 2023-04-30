@@ -13,16 +13,13 @@
 
 2. Basic auth for any request (inMemoryAuthenication)
 
-package com.practice.security;
 
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig {
-	
 	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-	    
-		 http
+	     http
 	      .csrf()
 	      .disable()
 	      .authorizeHttpRequests(authorize -> authorize
@@ -32,7 +29,6 @@ public class WebSecurityConfig {
 	      .httpBasic();
 	    return http.build();
 	 }
-
 	 @Autowired
 	 public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
 	    auth.inMemoryAuthentication()
@@ -50,7 +46,6 @@ public class WebSecurityConfig {
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig {
-		
 		// Authentication
 	@Bean
     public UserDetailsService userDetailsService() {
@@ -66,7 +61,6 @@ public class WebSecurityConfig {
                 .build();
         return new InMemoryUserDetailsManager(admin, user);
     }
-	
 		// Authorization 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
