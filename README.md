@@ -1,7 +1,7 @@
 # CRUD-operations
 
 
-================= BASIC AUTHORIZATION IMPLEMENTATION ======================
+===================== BASIC AUTHORIZATION IMPLEMENTATION ========================
 
 
 1. directly set username and password in application.property file (just for testing purpose)
@@ -90,12 +90,12 @@ public class WebSecurityConfig {
 4. Basic auth using DB
 
 
-===================================== JSON WEB TOKEN (JWT) AUTHENTICATION =========================================
+================== JSON WEB TOKEN (JWT) AUTHENTICATION ================================
 
 
-============================================= OAuth 2 ==========================================================
+============================ OAuth 2 =============================================
  # This is a protocol that allows users to grant access to their resources to third-party applications without giving them their passwords
 
 
-=========================================== OpenID Connect ============================================================
+======================= OpenID Connect ===========================================
 # This is a simple identity layer on top of the OAuth2 protocol. It allows clients to verify the identity of the end user based on the authentication performed by an authorization server.
